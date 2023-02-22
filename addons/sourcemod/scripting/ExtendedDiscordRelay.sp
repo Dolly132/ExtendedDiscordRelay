@@ -62,17 +62,17 @@ public void OnPluginStart()
 	/* Eban */
 	g_Eban.enable 	= CreateConVar("eban_discord_enable", "1", "Toggle eban notification system", _, true, 0.0, true, 1.0);
 	g_Eban.webhook 	= CreateConVar("eban_discord", "", "The webhook URL of your Discord channel. (Eban)", FCVAR_PROTECTED);
-	g_Eban.website	= CreateConVar("eban_website", "https://ebans.nide.gg", "The Ebans Website for your server (that sends the user to ebans list page)", FCVAR_PROTECTED);
+	g_Eban.website	= CreateConVar("eban_website", "", "The Ebans Website for your server (that sends the user to ebans list page)", FCVAR_PROTECTED);
 	
 	/* Kban */
 	g_Kban.enable 	= CreateConVar("kban_discord_enable", "1", "Toggle kban notification system", _, true, 0.0, true, 1.0);
 	g_Kban.webhook 	= CreateConVar("kban_discord", "", "The webhook URL of your Discord channel. (Kban)", FCVAR_PROTECTED);
-	g_Kban.website	= CreateConVar("kban_website", "https://kbans.nide.gg/index.php", "The Kbans Website for your server (that sends the user to bans list page)", FCVAR_PROTECTED);
+	g_Kban.website	= CreateConVar("kban_website", "", "The Kbans Website for your server (that sends the user to bans list page)", FCVAR_PROTECTED);
 	
 	/* Sourcebans */
 	g_Sbpp.enable 	= CreateConVar("sbpp_discord_enable", "1", "Toggle sourcebans notification system", _, true, 0.0, true, 1.0);
 	g_Sbpp.webhook 	= CreateConVar("sbpp_discord", "", "The webhook URL of your Discord channel. (Sourcebans)", FCVAR_PROTECTED);
-	g_Sbpp.website	= CreateConVar("sbpp_website", "https://bans.nide.gg/index.php", "Your sourcebans link", FCVAR_PROTECTED);
+	g_Sbpp.website	= CreateConVar("sbpp_website", "", "Your sourcebans link", FCVAR_PROTECTED);
 	
 	g_cvSteamAPI = CreateConVar("lilac_steam_api", "", "API Web Steam. Get your own https://steamcommunity.com/dev/apikey", FCVAR_PROTECTED);
 
